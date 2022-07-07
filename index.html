@@ -7,11 +7,10 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='./main.css'>
     <script src='./main.js'></script>
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
 </head>
 <body>
     <div class="banner-container" style="border:solid black 1px; height: 100px;">
-        
-        <a href="http://114.243.106.83:5000">"http://114.243.106.83:5000"</a>
     </div>
 
     <div class = "body-container" style="border:solid black 1px;min-height:500px;border-top: 0px;">
@@ -19,8 +18,23 @@
         </div>        
 
         <div class="body-main" style="border-radius:10px; float:left;border:solid 1px black;width:70%;height:400px">
- 
         </div>
     </div>
+
+
+    <div id="test1">
+        {{context}}
+    </div>
+    <script>
+        new Vue(
+            {
+                elem:"test1",
+                data:{
+                    message:"helloworld"
+                }
+            }
+        )
+
+    </script>
 </body>
 </html>
